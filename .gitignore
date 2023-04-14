@@ -1,10 +1,10 @@
 /lab1-4/plots/*.png
 .idea/
-/lab1-4/plots/*
-/lab1-4/lab1-4/lab2_res/*
-/lab1-4//lab3_plots/
-/lab1-4/lab4_res/
-/lab1-4/lab4_res_kernel/
+/lab1-4/lab1-4/lab2_res/*.tex
+/lab1-4/lab3_plots/*.png
+/lab1-4/lab4_res/*.png
+/lab1-4/lab4_res_kernel/*.png
+/lab1-4/task4
 
 
 
