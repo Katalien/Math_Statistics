@@ -5,19 +5,19 @@ from scipy.stats import poisson
 # from numpy.random.mtrand import poisson
 
 distributions = ['Normal', 'Cauchy', 'Laplace', 'Poisson', 'Uniform' ]
-# distributions = ['Poisson']
+# distributions = ['Laplace']
 loc, scale = 0.0, 1.0
 
 def get_sample(name, size):
-    if name == "Normal":
-        return  np.random.standard_normal(size=size)
-    if name == "Cauchy":
-        return np.random.standard_cauchy(size=size)
-    if name == 'Laplace':
-        return np.random.laplace(0, 1 / np.sqrt(2), size)
-    if name == 'Poisson':
+    if name == 'Normal':
+        return np.random.normal(0, 1, size)
+    elif name == 'Cauchy':
+        return np.random.standard_cauchy(size)
+    elif name == 'Laplace':
+        return np.random.laplace(0, np.sqrt(2) / 2, size)
+    elif name == 'Poisson':
         return np.random.poisson(10, size)
-    if name == 'Uniform':
+    elif name == 'Uniform':
         return np.random.uniform(-np.sqrt(3), np.sqrt(3), size)
     return []
 
