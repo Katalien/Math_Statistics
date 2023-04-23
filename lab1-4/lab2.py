@@ -70,8 +70,7 @@ def count_table_res():
             D_z_r =  np.around(np.mean(np.multiply(z_r, z_r)) - np.mean(z_r) * np.mean(z_r), decimals=4)
             D_z_Q =   np.around(np.mean(np.multiply(z_q, z_q)) - np.mean(z_q) * np.mean(z_q), decimals=4)
             D_z_tr =  np.around(np.mean(np.multiply(z_tr, z_tr)) - np.mean(z_tr) * np.mean(z_tr), decimals=4)
-            print(D_mean)
-            print(D_mediana)
+
             with open("lab2_res/" + dist + str(size) + ".tex", "w") as f:
                 f.write("\\begin{tabular}{|c|c|c|c|c|c|}\n")
                 f.write("\\hline\n")
